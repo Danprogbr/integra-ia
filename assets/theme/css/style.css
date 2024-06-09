@@ -332,8 +332,8 @@
 }
 
 .btn-black {
-    background-color: #535353;
-    border-color: #535353;
+    background-color: #000000;
+    border-color: #000000;
     box-shadow: none;
     font-size: 1.75rem !important;
     color: #fff;
@@ -2986,6 +2986,47 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
     .mbr-section-hero.mbr-after-navbar .mbr-section {
         padding-top: 10px;
     }
+}
+
+.navbar {
+    background: #000000 !important;
+}
 
 
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Cor do texto */
+    text-align: center;
+    z-index: 1;
+}
+
+#videoBG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .video-section {
+        height: 50vh; /* Reduz a altura da seção para 50% da viewport height */
+    }
+
+    .content {
+        font-size: 18px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
+}
+
+.video-section {
+    position: relative;
+    height: 100vh; /* Altura igual à altura da viewport */
+    overflow: hidden; /* Para esconder partes do vídeo fora da seção */
 }
