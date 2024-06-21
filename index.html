@@ -416,9 +416,14 @@
 </html>
 
 <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "443459ec-bddd-44b6-bb17-9eeab1fad186",
-        apiHost: "https://flowise.integraia.com.br/",
-    })
+    import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2.83/dist/web.js'
+
+    Typebot.initBubble({
+        typebot: "ativacaocutmix",
+        apiHost: "https://tpbotapi.integraia.com.br/",
+        theme: {
+            button: { backgroundColor: "#0042DA" },
+            chatWindow: { backgroundColor: "#fff" },
+        },
+    });
 </script>
