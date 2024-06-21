@@ -416,14 +416,14 @@
 </html>
 
 <script type="module">
-    import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2.83/dist/web.js'
+    const typebotInitScript = document.createElement("script");
+    typebotInitScript.type = "module";
+    typebotInitScript.innerHTML = import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2.83/dist/web.js'
 
     Typebot.initBubble({
-        typebot: "ativacaocutmix",
-        apiHost: "https://tpbotapi.integraia.com.br/ativacaocutmix",
-        theme: {
-            button: { backgroundColor: "#0042DA" },
-            chatWindow: { backgroundColor: "#fff" },
-        },
+        typebot: "disparador-contato-ia-chloe",
+        apiHost: "https://tpbotapi.integraia.com.br",
+        theme: { button: { backgroundColor: "#0042DA" } },
     });
+    document.body.append(typebotInitScript);
 </script>
